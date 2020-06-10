@@ -1,0 +1,173 @@
+<!doctype html><html><head><title> Learn Coding!</title>
+<link rel="shortcut icon" type="image/png" href="C:\Users\milap\desktop\kitchen2.jpg">
+<link rel=stylesheet href="C:\Users\milap\Desktop\indexcss.css">
+</head><body>
+
+
+<div class="container" id="head">
+
+<h1 class=main>Learn Coding</h1>
+<a class="nav" href="C:\Users\milap\Desktop\webpage.html"> About Me</a>
+<a class="nav" href ="https://www.google.co.uk"> Back to Google</a>
+<a class="nav" href =mailto: milap.r@hotmail.co.uk> Email Us</a>
+</div>
+
+
+<script>
+function submit() {
+var search =document.getElementById("in").value;
+document.getElementById("test").innerHTML = search;}
+</script>
+
+<input id="in" type=text placeholder="Type Here">
+<button onclick="submit()"> submit </button>
+<p id="test"></p>
+
+
+
+<h1 style=font-size:60px;text-align:center> Let's Get Started...</h1>
+<h1> 1.The Absolute Basics</h1>
+
+<p> Let's start with the absolute basics. Start by defining a page with <strong> "!doctypehtml" </strong> and <strong> "html." </strong> Place these between < > <br>
+A closing tag will also have a / sign. <br>
+The main body starts with a "body" tag, and ends with a body tag. This is where the content of the webpage goes.<br>
+Text can styled using tags. Text can be made <strong>strong</strong> or <em>emphasised</em>.<br>
+Text <br> can be moved to a new line using a line break tag
+</p>
+
+<h1>1b. Some other bits</h1>
+<p> The "head" tag comes before the body tag. Use the "head" tag to store data about the file. Eg. style, scripts and the title.<br>
+The title of the website can be set using the "title" tag. The title tag is used to determine what text a user sees in the tab of your site.<br>
+There are 6 heading tags, ranging from: <h1>h1 </h1> <h2>h2 </h2> <h3>h3 </h3><h4>h4 </h4><h5>h5 </h5><h5> h5</h5>
+
+
+<h1> 1c. Let's build a button</h1><button><em> Hi</em></button>
+<p> To build a button, use the "button" tag!<br>
+This button doesn't do anything until we give it a function, but more about this later!</p>
+
+<h1> 2b. Adding Links</h1>
+
+<p> Use the "a" tag to add a link. Attributes need to be added to the tag. These are additional pieces of information about the tag.<br>
+E.g. The link.<br> In the opening tag eg. "a href= " </p><br>
+<a href="https://www.google.co.uk/">Click here to go to Google</a>
+<p> Links can be used to create a website (a collection of webpages).<br>
+Links can link to pages on different computers (ie. a website) or pages from your own computer.<br>
+Links can include emails too </p>
+<a href="C:\Users\milap\Desktop\webpage.html"> Second page of my website</a><br>
+<a href ="https://www.google.co.uk"> Google</a><br>
+<a href =mailto: milap.r@hotmail.co.uk> Email</a><br>
+
+
+
+<h1> 3. Let's add an image</h1>
+<p> To add an image, use the 'img' tag. The href attribute chooses the image!</p>
+<img width=200px height=200px src="https://static.wixstatic.com/media/959400_44b7124ba9db40d0889427de71a1e557~mv2.png/v1/fill/w_260,h_269,al_c,q_85,usm_0.66_1.00_0.01/Baguette.webp">
+<img width=200px, height=200px src="C:\Users\milap\desktop\brownie.png">
+<p>Images can be added from the computer or from the internet.<br> These images have been coded to be equal in size.<br>
+We will come back to how to do this later!</p>
+
+<h1> 4. Let's get some input!</h1>
+<p>A massive part of a website will involve collecting user information<br>
+We do this using 'input' tags. These need several attributes too. <br>
+<strong>Placeholder</strong>- what is in the box to prompt the user?<br>
+<strong>Type</strong>-e.g. text, color, password, date, range, checkBox?<br></p>
+<h4> Here are some examples</h4>
+<input type="text" placeholder="hello"> <input type="color" placeholder="color">
+<input type="password" placeholder="password"> <input type="range" placeholder="range">
+<input type="checkBox" placeholder="hello"> <input type="date" placeholder="hello">
+
+<h1> 5. Let's group some elements</h1>
+<p> Sometimes, if you want to create a group of elements, you can use the 'div' tag.<br>
+This tag is great to treat a number of elements as a group - so you can refer to them as one unit. <br>
+One element inside another element is referred to as a nested element. <br>
+Grouping elements is particularly important when it comes to styling the page.</p>
+<h1>6. Let's build a list</h1>
+<p> Lists can help to organise information on a page. There are a few types: <br>
+  <ol> <li> Ordered list - this list is a numerical list</li></ol>
+  <ul><li> Unordered list - this list is a bullet-pointed list</li></ul>
+<ol> <li> Nested Lists are lists within lists</li>
+   <ul> <li> There</li> <li> We</li><li>go!</li></ul><li>Easy!</li></ol>
+<p> Each list item needs to start with the 'li' tag.</p>
+<h1>7. Let's add some style!</h1>
+<p><ol><li>To add style, CSS is used. This can be done in a number of ways.</li><br>
+  <ul><li> Add style straight to the HTML sheet using the 'style' tag. Then tags, classes and selectors are used to identify what is being styled</li>
+    <li> Add a separate stylesheet file, and link it to the HTML file. To  </li>
+    <li style="color:blue;"> Add style to individual lines or paragraphs </li></ul>
+
+<li>Text can be altered in a number of tags:</li>
+<ul><li style="font-size:14px;">'font-size' can be used to change text size. <span style="font-size:20px;"> (pixels can also be used for this.)</span></li>
+  <li style="font-family:verdana">'font-family' can be used to change the font style. </li>
+<li style="font-style:italic">'font-style' be used to italicise a text</li>
+<li style= "font-weight: bold"> 'font-weight' can be used to make a text bold.</li></ul></ol></p>
+<h3> Ideally, you will use a separate stylesheet. This style sheet needs to be linked to the HTML file.</h3>
+<p> Putting all your style code in a HTML file will lead to a long and confusing HTML file.<br>
+  Instead, in the 'head' tag of the html sheet, you can link a style sheet using the following syntax:</p>
+<p class="example"> "link href="style.css rel="stylesheet"</p>
+<p> The href is the file location, and the rel is the type of file used. <br>
+The Css file uses selectors like h1,h2 or p in the following syntax:</p>
+<p class="example"> h1{} </p>
+<p> the CSS code between the curly brackets applies to all H1s.</p>
+<p> Alternatively, elements can be given a class. This means they can belong to a certain group.<br>
+  I will add a class to the HTML code which is giving examples to be bold and centered. Look at the code here, where you will see how this might work.</p>
+<p class="example"> .example{font-weight:bold; text-align:center;color:blue;</p>
+<p> Please note. You can add several classes to one element</p>
+<style>
+.example{font-weight:bold; text-align:center;color:blue;}
+#hello{text-align:center; font-weight:bold;}
+</style>
+<p id="hello"> Notice that I have coded this differently. Here, an ID is used to identify a specific element.</p>
+<p> To put an ID on the style sheet, use the following:</p>
+<p class="example">#hello{text-align:center; font-weight:bold;</p>
+
+<h1 id="eight">8. Let's keep Styling</h1>
+<p> From now, I will code in the CSS sheet</p>
+<p> The pictures from part 3 were styled to ensure that their heights were identical.<br>
+This was done using the height and width properties of the element</p>
+<p id=back> Background colour can be changed.<br> We can also set a <span style="border:solid black 2px;"> border.</p>
+<h2> The box model</h2>
+<p> There are four layers of an element: content, padding, border and margin.<br>
+<ul> <li> Padding surrounds the content - this can be different on each side</li>
+  <li> The border surrounds the padding</li>
+    <li> Margin is outside of the padding - this can also be different on each side</li></ul>
+<p id="box"> Content</p>
+<p> The uneven pinkness is due to a bigger left padding, and the extra white on the left is due to a bigger left margin!</p>
+<h1> 8b. More CSS Functions</h1>
+<p> Elements can be edited in a number of ways, although this can be done on any element type, I will give examples in an image.</p>
+<img id="edit" src="C:\Users\milap\desktop\milap photo.jpg">
+<img id="edit3" src="C:\Users\milap\desktop\milap photo.jpg">
+<p> You can: blur, rotate, grayscale, change contrast, brighten up and saturate!</p>
+<h3 id="gradeg"> Now let's look at gradients</h3>
+<img id="edit4" src="C:\Users\milap\desktop\milap photo.jpg">
+<p> By default, the gradient goes from top to bottom, but this can be changed!<br> Note. Colours can be added by name, by their hex tag using a hash key, or by their rbg(a,b,c).</p>
+
+<h3> A quick look at display</h3>
+<div id="border"><img id="edit5" src="C:\Users\milap\desktop\milap photo.jpg"></div>
+<p id="egOfGroupingSelectors"> This image was coded to be half of the width of its parent (the border)
+
+<h1> 9. Display on a page</h1>
+<p> Block-level elements take up the full width. This is why, so far, each image has taken up full amounts of the page with nothing beside it.<br> Examples of this are: headings and paragraphs.<br> The "display" element decides if an element displays on the same line.<br> Headings and paragraphs are block by default. Links are in-line by default.</p>
+<p> In-line elements can share a line by default. You cannot change the size of these. Eg. em, strong<br>
+Inline block is the display type for buttons and images. You CAN change the size of these. </p>
+<button>Hello</button>
+<button>Hi</button>
+<p>This <em id="drop">emphasised</em> text can now change it's size!</p>
+<p> Block values can be changed to in-line block.</p>
+<img id="float" src="C:\Users\milap\desktop\brownie.png">
+<p> We can use this to make text wrap around image<br>Text<br>can<br> now<br> be<br> beside<br> images</p>
+<p id="stop"> Now lets stop bring the text back since we aren't talking about brownies now. We do this by adding the clear element to any paragraphs after the picture</p>
+<p> The float element is used to make layouts!</p>
+<h1>10.  Let the JavaScript Begin!</h1>
+
+<div id="footer">
+
+<div class="column"> <h4>My links</h4>
+<p> Hello</p><p>Facebook<p/><p>Three</p></div>
+
+<div class="column"> <h4>Developing a page</h4>
+<p>I am an aspiring developer!</p><br><a href="C:\Users\milap\Desktop\webpage.html">About me</p>
+</div>
+
+</div>
+
+
+</body></html>
